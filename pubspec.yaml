@@ -1,5 +1,6 @@
 name: smart_alarm_empty
 description: A new Flutter project.
+
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -11,15 +12,13 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 # build by specifying --build-name and --build-number, respectively.
 # In Android, build-name is used as versionName while build-number used as versionCode.
 # Read more about Android versioning at https://developer.android.com/studio/publish/versioning
-# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
 # Read more about iOS versioning at
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
-# In Windows, build-name is used as the major, minor, and patch parts
-# of the product and file versions while build-number is used as the build suffix.
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.1.0 <4.0.0'
+  sdk: ">=2.12.0 <3.0.0"
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -35,19 +34,16 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-  get: ^4.6.6
-  sqflite: ^2.3.0
-  shared_preferences: ^2.2.1
-  local_auth: ^2.1.7
-  flutter_launcher_icons: ^0.13.1
-  url_launcher: ^6.1.14
-  call_log: ^4.0.0
+  get: ^4.6.1
+  sqflite: ^2.0.2
+  telephony: ^0.1.4
+  shared_preferences: ^2.0.15
+  liquid_progress_indicator: ^0.4.0
+  local_auth: ^1.1.11
   passcode_screen: ^2.0.1
-  liquid_progress_indicator_v2: ^0.5.0
-  telephony:
-    git:
-      url: https://github.com/AliAzizi/fl-telephony.git
-      ref: develop
+  flutter_launcher_icons: ^0.11.0
+  url_launcher: ^6.1.2
+  call_log: ^4.0.0
 
 dev_dependencies:
   flutter_test:
@@ -58,12 +54,12 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^2.0.0
+  flutter_lints: ^1.0.2
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
-# The following section is specific to Flutter packages.
+# The following section is specific to Flutter.
 flutter:
 
   # The following line ensures that the Material Icons font is
@@ -74,12 +70,10 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - image/
-    - image/main/
-    
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
-  # https://flutter.dev/assets-and-images/#resolution-aware
+  # https://flutter.dev/assets-and-images/#resolution-aware.
 
   # For details regarding adding assets from package dependencies, see
   # https://flutter.dev/assets-and-images/#from-packages
