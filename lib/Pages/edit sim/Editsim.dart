@@ -8,7 +8,7 @@ import '/Getxcontroller/controllerphoneinfo.dart';
 import '/Pages/edit%20sim/funcsim.dart';
 import '/color.dart';
 import 'package:telephony/telephony.dart';
-import 'package:liquid_progress_indicator_v2/liquid_progress_indicator.dart';
+import 'package:liquid_progress_indicator/liquid_progress_indicator.dart';
 import '../../main.dart';
 
 class EditSim extends StatefulWidget {
